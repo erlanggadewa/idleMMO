@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/index.js",
+    "dev": "nodemon ./bin/index.js",
     "build": "echo 'No build step'"
   },
   "dependencies": {
