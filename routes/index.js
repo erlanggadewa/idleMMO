@@ -113,7 +113,7 @@ router.get('/@HackerInside', async function (req, res, next) {
 
     let isFailedReset = false
     do {
-      const reset = await fetch("https://web.idle-mmo.com/api/skills/start?expires=1728572496&signature=3b94df2f09f9184545f41b47d3ad820c8b8326680ad80663fa1d8e6c92221845", {
+      const reset = await fetch("https://web.idle-mmo.com/api/skills/start?expires=1728628636&signature=fdd26a311ff96750fb609038598039a73260f0d82b97bdf989a1d6de4adaddc9", {
         "headers": {
           "accept": "application/json",
           "accept-language": "id,en-US;q=0.9,en;q=0.8",
@@ -126,11 +126,11 @@ router.get('/@HackerInside', async function (req, res, next) {
           "sec-fetch-dest": "empty",
           "sec-fetch-mode": "cors",
           "sec-fetch-site": "same-origin",
-          "cookie": "dismissed_announcements=3; gawain_lancelot=c2b585bif73c; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6Ikp1c29CVjVsV1ZQVDhmTS9NTnlXdGc9PSIsInZhbHVlIjoiUGcyRnpXRmJmZDJ3bVdQOTJkN2VlUEJtemZ3SlNRNkJDTGc2MzhJMDc1bGprR3RkZG9zUENqWWhQa3FVdVA4My9xdmdrV0hscjA4M2xRTU9yU1BnTmIvVDdxRjBPTEg5WERsZnpVREFoZ2dCRytCYXdrWHM1allmYVRqTG83TUlqeFM1dm91SVFUNHJURnpSOXBrcFRqbGlESVM5bkNVYzBUdzJxUGJuWnFRaGtqNWZQdGFoS2lqa3dmNnZSUmllNnBvU3Rtbm9XZDI4QzlTZUlBdnZ6d3R0eit6SUFkR1NnYjdOdnZyT3J6RT0iLCJtYWMiOiI5NDI0ZjY0ODVlMzc5NTM4YzMwNzAwNGIxNGQ0MTU1OGIzZTIwNjAyM2I2ZGJhNWNhZmVkOTM4YjM4ZDk0ZDgxIiwidGFnIjoiIn0%3D; dropdown_skills=true; XSRF-TOKEN=eyJpdiI6IjM5akRycHBHTWNLazd3Tmg2MDhjdUE9PSIsInZhbHVlIjoid0tZMWVhdmRjNmlrWGRqUno5QnZOQnZVSlFIOEk5YXdaUktnNkhFeDlnUmVBMExjbWwzRjd6dVpSc2tId0EwOWtrSFJXS0p2YUNWUjY1eXhpd1Mxa2VycEptcTRrdTlwSElQMU9XWlBva1V3N2NMMXlOLzgzV3ZLZmZMTGRpNlciLCJtYWMiOiIzZDBmNDQzYWNmZjU4NzcwNWM0OGE1YTY3YTI0YmY3MTU5MGI0OTBjNDBhMjgyMjYxNTRlZmVlYmYzM2UyYmY4IiwidGFnIjoiIn0%3D; idlemmo_session=eyJpdiI6IitsdFZEdGNQRG5Xb0cwMmwvc2paTVE9PSIsInZhbHVlIjoibHNYZHN1eG9hRm1WdzRzOFR3WXU0b1VXLy95SlhsekNLRnJpSWtuQXc2U1lrR0ZEUzdCaWUxcnRFbGdBNUNJRGVNTDJvRUpmRTdhNDdPeGNmMmlHM0V1T0JOWlJ3eTd3bGROU296d3NKeVpUeDBUSzlVTzd0cERUSmtqZ2VkbjMiLCJtYWMiOiIxYjM0OTljMzcwZGQxNmZkOGQwZTlhMjJkNzlmNzYwYThkNzYxZWFjNjdmODg0Y2Y1ZWFlNjQ1YWFkMmVlYjExIiwidGFnIjoiIn0%3D",
-          "Referer": "https://web.idle-mmo.com/@HackerInside",
+          "cookie": "dismissed_announcements=3; gawain_lancelot=c2b585bif73c; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6Ikp1c29CVjVsV1ZQVDhmTS9NTnlXdGc9PSIsInZhbHVlIjoiUGcyRnpXRmJmZDJ3bVdQOTJkN2VlUEJtemZ3SlNRNkJDTGc2MzhJMDc1bGprR3RkZG9zUENqWWhQa3FVdVA4My9xdmdrV0hscjA4M2xRTU9yU1BnTmIvVDdxRjBPTEg5WERsZnpVREFoZ2dCRytCYXdrWHM1allmYVRqTG83TUlqeFM1dm91SVFUNHJURnpSOXBrcFRqbGlESVM5bkNVYzBUdzJxUGJuWnFRaGtqNWZQdGFoS2lqa3dmNnZSUmllNnBvU3Rtbm9XZDI4QzlTZUlBdnZ6d3R0eit6SUFkR1NnYjdOdnZyT3J6RT0iLCJtYWMiOiI5NDI0ZjY0ODVlMzc5NTM4YzMwNzAwNGIxNGQ0MTU1OGIzZTIwNjAyM2I2ZGJhNWNhZmVkOTM4YjM4ZDk0ZDgxIiwidGFnIjoiIn0%3D; dropdown_skills=true; XSRF-TOKEN=eyJpdiI6Ik80dGRLRU5iQWdhdHkwK0d2dmJWcGc9PSIsInZhbHVlIjoiR0ZwL1BoenNwSXQvam45a0Vmem1xUFhYcDlnT0l2d3RZWHR6MndRK0RCeUpTZ3Z5aWpBMUdpZ0lOTzVYaXplWkxXaE52U1A1aUtwZXNhNWxwY3VKTHhXUnZKQXB3SFJBdzNxRG0zbVh2a0NZeWdJeElYQkN2OUZCeElHZVJHdSsiLCJtYWMiOiJjMWUxN2JjMmVlM2YzMGM0MWY2NGZiMDA0MzMxMjI3NzcyODljOGNhN2RiZGE5Nzg1YmQ0MDFjZGVhNWQ3NmQ2IiwidGFnIjoiIn0%3D; idlemmo_session=eyJpdiI6ImZncGVjZ3N5bkQ1RkI5d3NiMTVucVE9PSIsInZhbHVlIjoiUHQ4NlY4UE9WN0tiaWxrT1g0YjIwY3EvRk5Sak1jTkNZZ1N5NFR3T2lHNkZyQW9GMWFubjR3M3oyeEpTNzF0Z2xyZzFUNHZOaitodUFzWTN0VVk1TnFQRzJ6Wkc1NnUzYyt3dEc4TlgyRjFZZkhkb1ZRbkp3RWNrYlJxRjJJbysiLCJtYWMiOiI2ZDAxYjgwNzA1MGNiODE3NTc3YjY4YmRhNGI5NjIzZmNhNGZlZTFkYWZiN2Y0MzY1MWExZmY4MTczYzg4ZWVhIiwidGFnIjoiIn0%3D",
+          "Referer": "https://web.idle-mmo.com/skills/view/mining",
           "Referrer-Policy": "strict-origin-when-cross-origin"
         },
-        "body": "{\"skill_item_id\":15,\"quantity\":193,\"ts2mic5ytx\":\"VFJc\",\"qty6bx4peh\":\"U1BZ\",\"v\":\"1.0.0.1\"}",
+        "body": "{\"skill_item_id\":16,\"quantity\":166,\"ts2mic5ytx\":\"Xlhe\",\"qty6bx4peh\":\"V1ha\",\"v\":\"1.0.0.1\"}",
         "method": "POST"
       });
       if (reset.status !== 200) {
