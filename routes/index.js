@@ -39,7 +39,7 @@ router.get('/@RyzenRenoir', async function (req, res, next) {
 
     let isFailedReset = false
     do {
-      const reset = await fetch("https://web.idle-mmo.com/api/skills/start?expires=1728569698&signature=c398135e0d7157f3efac027046022f47f6b153bc457ea466bda8e73c0f584a46", {
+      const reset = await fetch("https://web.idle-mmo.com/api/skills/start?expires=1728606326&signature=db23e9fc27123ea51fbf4b019611fc92b5fdcc95e9efc0d9b22e5a6daf45b2ef", {
         "headers": {
           "accept": "application/json",
           "accept-language": "id,en-US;q=0.9,en;q=0.8",
@@ -52,11 +52,11 @@ router.get('/@RyzenRenoir', async function (req, res, next) {
           "sec-fetch-dest": "empty",
           "sec-fetch-mode": "cors",
           "sec-fetch-site": "same-origin",
-          "cookie": "dismissed_announcements=3; gawain_lancelot=c2b585bif73c; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6Ikp1c29CVjVsV1ZQVDhmTS9NTnlXdGc9PSIsInZhbHVlIjoiUGcyRnpXRmJmZDJ3bVdQOTJkN2VlUEJtemZ3SlNRNkJDTGc2MzhJMDc1bGprR3RkZG9zUENqWWhQa3FVdVA4My9xdmdrV0hscjA4M2xRTU9yU1BnTmIvVDdxRjBPTEg5WERsZnpVREFoZ2dCRytCYXdrWHM1allmYVRqTG83TUlqeFM1dm91SVFUNHJURnpSOXBrcFRqbGlESVM5bkNVYzBUdzJxUGJuWnFRaGtqNWZQdGFoS2lqa3dmNnZSUmllNnBvU3Rtbm9XZDI4QzlTZUlBdnZ6d3R0eit6SUFkR1NnYjdOdnZyT3J6RT0iLCJtYWMiOiI5NDI0ZjY0ODVlMzc5NTM4YzMwNzAwNGIxNGQ0MTU1OGIzZTIwNjAyM2I2ZGJhNWNhZmVkOTM4YjM4ZDk0ZDgxIiwidGFnIjoiIn0%3D; dropdown_skills=true; XSRF-TOKEN=eyJpdiI6IjZNVnhuL0ZpQXNUOFU1Y1BRTlU1Y0E9PSIsInZhbHVlIjoic0xvZHgwTnZ6WlFFMktxWDZzMitGTGhqUmRHRXBhOE01M1V5bFc1OWo5Sy9OWjJQUko0QXdhYTBFTWliekpYSCtGbWN3UHRoZFFwelpycXV3SjJ3WU1sR0w3anJFOVRQdkNBYjJ5Vi9pOEdsUlpXT3NaTExPY3lBS3NlVFhBaWMiLCJtYWMiOiI2NzEzY2I4MzU5ODBmNGY2MGU0ZjQ1NzY0NmMyMzhmYzk4NTNlMTgzNDVlNWU4MzA5MTNhMjMyZTIwZWNmODBlIiwidGFnIjoiIn0%3D; idlemmo_session=eyJpdiI6IkhsaGFjT3NFM2l6QTl5cWlvM08vTXc9PSIsInZhbHVlIjoiTzg1YzVTYVJBZitDeGZvL1JFYzFlVHl2dnVtc1BpcVUvOExHLzNxR3podlBocndtaEtIdFVtdmExNWdLTUJBMllEdzY5NmNKNFB0bjdZTFlHYjRpUEFIUlN0VXZmRkdnWG5ETFpNUk9TYW1WRVF5bU53amxubXNjZ0tONzBDTmkiLCJtYWMiOiJmMGVkODRkZWE1Yzg3ZDk0Yzg0Yzg2MmEwNDk4MjZkNWYzMTU3MzZjMDgwMDg4Nzc1NWMwNDA3OWVkYmIyYTA2IiwidGFnIjoiIn0%3D",
+          "cookie": "dismissed_announcements=3; gawain_lancelot=c2b585bif73c; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6Ikp1c29CVjVsV1ZQVDhmTS9NTnlXdGc9PSIsInZhbHVlIjoiUGcyRnpXRmJmZDJ3bVdQOTJkN2VlUEJtemZ3SlNRNkJDTGc2MzhJMDc1bGprR3RkZG9zUENqWWhQa3FVdVA4My9xdmdrV0hscjA4M2xRTU9yU1BnTmIvVDdxRjBPTEg5WERsZnpVREFoZ2dCRytCYXdrWHM1allmYVRqTG83TUlqeFM1dm91SVFUNHJURnpSOXBrcFRqbGlESVM5bkNVYzBUdzJxUGJuWnFRaGtqNWZQdGFoS2lqa3dmNnZSUmllNnBvU3Rtbm9XZDI4QzlTZUlBdnZ6d3R0eit6SUFkR1NnYjdOdnZyT3J6RT0iLCJtYWMiOiI5NDI0ZjY0ODVlMzc5NTM4YzMwNzAwNGIxNGQ0MTU1OGIzZTIwNjAyM2I2ZGJhNWNhZmVkOTM4YjM4ZDk0ZDgxIiwidGFnIjoiIn0%3D; dropdown_skills=true; XSRF-TOKEN=eyJpdiI6Ik1tOUcvakNUK0dZWGpVN1M1Rjk4QVE9PSIsInZhbHVlIjoiK1ZmemV1anV6YnB0MlZhemZxUWhtTXVMbE8yYnhlWm9pWmpUZ1F0OWhBTnRKaG90L3ZHNzdyWXl3ZFl2QURXTnpGczVERm9RMnk1RHowV29vVXBORFBUZHN1U2hiWGdOYUpDdXF2M1FpZW1LdUlSa2dkWGw2RUE0TjBNUkdQTUMiLCJtYWMiOiJmOTE4MTBkYzFmN2NlZmFkMDk2OTZhMGYxMmQ2YWFkYWIzZjNiNTUwODI2ZjBmZTNiNTZmNmQ3Yzg0Yzc3ZWI4IiwidGFnIjoiIn0%3D; idlemmo_session=eyJpdiI6IjZMaDlHYUZqb2NvU2hYWnpFd3F4VVE9PSIsInZhbHVlIjoiNkE5TW12TExpcWMrYWY5L2ZGTkw1a3FKVFhnQnZDWFkrdkduMHd1YndLSjRQaUt2SGIyTUlCWDVPUUhTNlYwSGhkOVF3NDVzUVM1MTA0emNjQkM2Y296Q21CUkk0YlV3dGUreU96MWlaSmpLUkl5MU9wdU9SVC9WbWl6cFl4aUciLCJtYWMiOiI3MjgyMDY2OTk3NzUwNGZlZDdkZjVlZWNjZDgzODNjYTYwOWUwZDFmNWVmNDYxYjMzMTc3MTlkNDM3MTViYWE1IiwidGFnIjoiIn0%3D",
           "Referer": "https://web.idle-mmo.com/skills/view/mining",
           "Referrer-Policy": "strict-origin-when-cross-origin"
         },
-        "body": "{\"skill_item_id\":15,\"quantity\":170,\"ts2mic5ytx\":\"UlJR\",\"qty6bx4peh\":\"VFBZ\",\"v\":\"1.0.0.1\"}",
+        "body": "{\"skill_item_id\":16,\"quantity\":146,\"ts2mic5ytx\":\"V1NdRQ==\",\"qty6bx4peh\":\"V1lR\",\"v\":\"1.0.0.1\"}",
         "method": "POST"
       });
       if (reset.status !== 200) {
