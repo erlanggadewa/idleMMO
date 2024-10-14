@@ -30,7 +30,7 @@ router.get('/@RyzenRenoir', async function (req, res, next) {
 
 
     if (!switchAcc.ok) {
-      throw new Error(`Failed to switch account, ${error}`);
+      throw new Error(`Failed to switch account @RyzenRenoir`);
     }
 
     const reset = await fetch("https://web.idle-mmo.com/api/skills/start?expires=1729005570&signature=1937114dbedf2615c92125635e0dc3860fdf43b506b1548319627902d6ba7464", {
@@ -55,7 +55,7 @@ router.get('/@RyzenRenoir', async function (req, res, next) {
     });
 
     if (!reset.ok) {
-      throw new Error(`Failed to reset mining time, ${error}`);
+      throw new Error(`Failed to reset mining time @RyzenRenoir`);
     }
 
 
@@ -92,7 +92,7 @@ router.get('/@HackerInside', async function (req, res, next) {
     });
 
     if (!switchAcc.ok) {
-      throw new Error(`Failed to switch account, ${error}`);
+      throw new Error(`Failed to switch account @HackerInside`);
     }
 
     const reset = await fetch("https://web.idle-mmo.com/api/skills/start?expires=1729005505&signature=d472c71b025711c4df71af323d7ce001bb9f32849c884714fc6e5103c986194b", {
@@ -117,7 +117,7 @@ router.get('/@HackerInside', async function (req, res, next) {
     });
 
     if (!reset.ok) {
-      throw new Error(`Failed to reset mining time, ${error}`);
+      throw new Error(`Failed to reset mining time @HackerInside`);
 
     }
 
