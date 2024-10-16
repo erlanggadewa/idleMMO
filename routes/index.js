@@ -70,9 +70,7 @@ router.get('/@HackerInside', async function (req, res, next) {
     let isSuccess = false;
     let tryCount = 10;
 
-    await setTimeout(() => {
-      return
-    }, 5000);
+
 
     do {
       const switchAcc = await fetch("https://web.idle-mmo.com/user/character/switch/366997", {
