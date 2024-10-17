@@ -6,6 +6,7 @@ var logger = require('morgan');
 
 var hackerInsideRouter = require('./routes/HackerInside/index');
 var ryzenRenoirRouter = require('./routes/RyzenRenoir/index');
+var raptorLakeRouter = require('./routes/RaptorLake/index');
 
 var app = express();
 
@@ -21,6 +22,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/@HackerInside', hackerInsideRouter);
 app.use('/@RyzenRenoir', ryzenRenoirRouter);
+app.use('/@RaptorLake', raptorLakeRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
