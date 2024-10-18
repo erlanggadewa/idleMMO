@@ -4,9 +4,11 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
-var hackerInsideRouter = require('./routes/HackerInside/index');
-var ryzenRenoirRouter = require('./routes/RyzenRenoir/index');
-var raptorLakeRouter = require('./routes/RaptorLake/index');
+var hackerInsideRouter = require('./routes/erlanggadewa7/HackerInside/index');
+var ryzenRenoirRouter = require('./routes/erlanggadewa7/RyzenRenoir/index');
+var raptorLakeRouter = require('./routes/erlanggadewa7/RaptorLake/index');
+var ryzenPhoenixRouter = require('./routes/erlanggadewa77/RyzenPhoenix/index');
+var ryzenRaphaelRouter = require('./routes/erlanggadewa77/RyzenRaphael/index');
 
 var app = express();
 
@@ -23,6 +25,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/@HackerInside', hackerInsideRouter);
 app.use('/@RyzenRenoir', ryzenRenoirRouter);
 app.use('/@RaptorLake', raptorLakeRouter);
+
+app.use('/@RyzenPhoenix', ryzenPhoenixRouter);
+app.use('/@RyzenRaphael', ryzenRaphaelRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

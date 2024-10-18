@@ -1,4 +1,4 @@
-async function woodRaptor() {
+async function woodPhoenix() {
   return await fetch("https://web.idle-mmo.com/api/skills/start?expires=1729321809&signature=c0615d31226d170c3808dbd433f5e0de0231e7a2e67cde5cde56d2f8f08f7dd0", {
     "headers": {
       "accept": "application/json",
@@ -21,4 +21,4 @@ async function woodRaptor() {
   });
 }
 
-module.exports = woodRaptor;
+module.exports = woodPhoenix;
